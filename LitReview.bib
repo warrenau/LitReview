@@ -613,8 +613,36 @@ within the 5 ms. limit assuming an ultra-fast opening device.},
   volume   = {123},
   abstract = {A new method for calculating power shape and critical control rod position is described and validated in view of increasing the fidelity of the Penn State Breazeale Reactor's (PSBR) fuel management code. Currently, the PSBR fuel management code is biased against experimental results and requires the use of empirical correction factors. This is likely due to a combination of assumptions, such as the control rods being fixed in the all-out position and the use of a uniform fuel temperature. The proposed method supplies this data using fission-matrix-based neutronics coupled with TRACE thermal-hydraulics. The fission-matrix-based neutronics relies on Serpent for precalculation of fission matrices. Steady-state fuel temperature distributions, power shapes, and control rod positions are calculated through iteration between TRACE and fission matrix calculations. Validation is performed on the coupled TRACE-fission matrix model for powers ranging from 50 kW to 1 MW. For these cases, the RMS average error with experimental data is 12.7 K for instrumented element fuel temperature and $0.07 for reactivity change. Agreement is generally within estimated experimental uncertainty. The effect of various modeling parameters, such as the fuel-cladding gap heat transfer coefficient and the exact radial location of the instrumented element thermocouple, are shown. Finally, the impact of this increased modeling fidelity on the depletion calculation is estimated. In the future, this validation should be repeated on later core loadings of the PSBR where more detailed experimental data is available. Comparison between the current PSBR fuel management code and the proposed model should also be made.},
   doi      = {https://doi.org/10.1016/j.pnucene.2020.103273},
+  file     = {:VV/Rau_TRACE_PSBR.pdf:PDF},
   keywords = {Fission-matrix, TRIGA, TRACE, Multi-physics, Serpent},
   url      = {https://www.sciencedirect.com/science/article/pii/S0149197020300329},
+}
+
+@Article{Knebel2016,
+  author   = {Miriam Knebel and Luigi Mercatali and Victor Sanchez and Robert Stieglitz and Rafael Macian-Juan},
+  journal  = {Annals of Nuclear Energy},
+  title    = {Validation of the Serpent 2-DYNSUB code sequence using the Special Power Excursion Reactor Test III (SPERT III)},
+  year     = {2016},
+  issn     = {0306-4549},
+  pages    = {79-91},
+  volume   = {91},
+  abstract = {The Special Power Excursion Reactor Test III (SPERT III) is studied using the Serpent 2-DYNSUB code sequence in order to validate it for modeling reactivity insertion accidents (RIA) in PWRs. The SPERT III E-core was a thermal research reactor constructed to analyze reactor dynamics. Its configuration resembles a commercial PWR on terms of fuel type, choice of moderator, coolant flow and system pressure. The initial conditions of the rod ejection accident experiments (REA) performed cover cold startup, hot startup, hot standby and operating power scenarios. Eight of these experiments were analyzed in detail. Firstly, multi-dimensional nodal diffusion cross section tables were created for the three-dimensional reactor simulator DYNSUB employing the Monte Carlo neutron transport code Serpent 2. In a second step, DYNSUB stationary simulations were compared to Monte Carlo reference three-dimensional full scale solutions obtained with Serpent 2 (cold startup conditions) and Serpent 2/SUBCHANFLOW (operating power conditions) with a good agreement being observed. The latter tool is an internal coupling of Serpent 2 and the sub-channel thermal-hydraulics code SUBCHANFLOW. Finally, DYNSUB was utilized to study the eight selected transient experiments. Results were found to match measurements well. As the selected experiments cover much of the possible transient (delayed super-critical, prompt super-critical and super-prompt critical excursion) and initial conditions (cold and hot as well as zero, little and full power reactor states) one expects in commercial PWRs, the obtained results give confidence that the Serpent 2-DYNSUB tool chain is suitable to model REAs and other RIAs in PWRs.},
+  doi      = {https://doi.org/10.1016/j.anucene.2016.01.005},
+  file     = {:VV/Knebel_DYNSUB_SPERT_2016.pdf:PDF},
+  keywords = {Serpent 2/SUBCHANFLOW, DYNSUB, Rod ejection accident, SPERT, Validation},
+  url      = {https://www.sciencedirect.com/science/article/pii/S030645491630007X},
+}
+
+@InProceedings{Seker2007,
+  author       = {Seker, Volkan and Thomas, Justin and Downar, Thomas},
+  booktitle    = {Prceedings of the Joint International Topical Meeting on Mathematics \& Computation and Supercomputing in Nuclear Applications (M\&C + SNA 2007)},
+  title        = {REACTOR SIMULATION WITH COUPLED MONTE CARLO AND COMPUTATIONAL FLUID DYNAMICS},
+  year         = {2007},
+  organization = {American Nuclear Society},
+  publisher    = {American Nuclear Society},
+  abstract     = {This paper demonstrates the applicability of Monte Carlo analysis to perform nuclear reactor core simulations with thermofluid feedback from a computational fluid dynamics code. An interface program, McSTAR, was written to couple MCNP5 to the commercial computational fluid dynamics code STAR-CD. McStar is a Perl script which alternately executes MCNP5, STAR-CD and cross section update routines on multiprocessor Linux clusters. It also performs the necessary manipulations in the MCNP5 input and data files. Cross section libraries are generated using the sub-pin level temperature distribution calculated by STAR-CD, and MCNP input files are manipulated to reflect the moderator density distribution provided by STAR-CD. Using this feedback data, the MCNP simulation proceeds and determines the next approximation for the eigenvalue as well as the heat source distribution for the next CFD calculation. Several methods to update cross section library were investigated and are described in the paper. The coupled codes were tested using a single PWR pin-cell problem and 3x3 array of PWR fuel pins. The preliminary results are compared with those obtained from a STAR-CD calculation coupled with the deterministic transport code DeCART. Ongoing research is described to investigate more efficient acceleration and convergence methods, as well as more robust methods to validate the coupled calculation.},
+  file         = {:VV/Seker_McSTAR_2007.pdf:PDF},
+  keywords     = {Monte Carlo, thermal feedback, McStar, CFD, high-performance computing},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
