@@ -236,14 +236,16 @@ reactivity.},
 }
 
 @TechReport{vv40,
-  institution = {ASME},
-  title       = {{Assessing} {Credibility} of {Computational} {Modeling} {Through} {Verification} and {Validation}: {Application} to {Medical} {Devices}},
-  year        = {2018},
-  type        = {Standard},
-  abstract    = {Computational modeling can be used throughout the product life cycle to provide information about technical performance, safety, and effectiveness of medical devices. Computational models can also be used to assess aspects of in vivo performance without subjecting patients (or animals) topotential harm or unnecessary risk. Establishing the credibility of a computational model to assess performance is important because of the potential risk a device presents to patients and/or healthcare providers.
+  author       = {{ASME}},
+  institution  = {{American} {Society} of {Mechanical} {Engineers}},
+  title        = {{Assessing} {Credibility} of {Computational} {Modeling} {Through} {Verification} and {Validation}: {Application} to {Medical} {Devices}},
+  year         = {2018},
+  type         = {Standard},
+  abstract     = {Computational modeling can be used throughout the product life cycle to provide information about technical performance, safety, and effectiveness of medical devices. Computational models can also be used to assess aspects of in vivo performance without subjecting patients (or animals) topotential harm or unnecessary risk. Establishing the credibility of a computational model to assess performance is important because of the potential risk a device presents to patients and/or healthcare providers.
 
 Model credibility can be established through verification and validation (V\&V) activities. Although methods for V\&V are becoming well established, guidance is lacking on assessing the relecance and adequacy of the V\&V activities for computational models used to support medical device development and evaluation. Given the inherent risk of using a computational model as a basis for predicting medical device performance, the ASME V\&V 40 Subcommittee has developed a risk-informed credibility assessment framework. The framework centers on establishing that model credibility is commensurate with the risk associated with the decisions influenced by the computational model. Thus, the intent of this Standard is to provide guidance on how to establish and communicate risk-informed credibility of computational models used in the evaluation of medical devices.},
-  file        = {:VV/ASME V&V 40-2018.pdf:PDF},
+  file         = {:VV/ASME V&V 40-2018.pdf:PDF},
+  organization = {{American} {Society} of {Mechanical} {Engineers}},
 }
 
 @InProceedings{Leingang2020,
@@ -466,11 +468,13 @@ within the 5 ms. limit assuming an ultra-fast opening device.},
 }
 
 @TechReport{vv20,
-  institution = {ASME},
-  title       = {{Standard} for {Verification} and {Validation} in {Computational} {Fluid} {Dynamics} and {Heat} {Transfer}},
-  year        = {2009},
-  type        = {Standard},
-  file        = {:VV/ASME V&V 40-2018.pdf:PDF},
+  author       = {{ASME}},
+  institution  = {{American} {Society} of {Mechanical} {Engineers}},
+  title        = {{V\&V 20}: {Standard} for {Verification} and {Validation} in {Computational} {Fluid} {Dynamics} and {Heat} {Transfer}},
+  year         = {2009},
+  type         = {Standard},
+  file         = {:VV/ASME V&V 40-2018.pdf:PDF},
+  organization = {{American} {Society} of {Mechanical} {Engineers}},
 }
 
 @MastersThesis{Prieto2019,
@@ -643,6 +647,28 @@ within the 5 ms. limit assuming an ultra-fast opening device.},
   abstract     = {This paper demonstrates the applicability of Monte Carlo analysis to perform nuclear reactor core simulations with thermofluid feedback from a computational fluid dynamics code. An interface program, McSTAR, was written to couple MCNP5 to the commercial computational fluid dynamics code STAR-CD. McStar is a Perl script which alternately executes MCNP5, STAR-CD and cross section update routines on multiprocessor Linux clusters. It also performs the necessary manipulations in the MCNP5 input and data files. Cross section libraries are generated using the sub-pin level temperature distribution calculated by STAR-CD, and MCNP input files are manipulated to reflect the moderator density distribution provided by STAR-CD. Using this feedback data, the MCNP simulation proceeds and determines the next approximation for the eigenvalue as well as the heat source distribution for the next CFD calculation. Several methods to update cross section library were investigated and are described in the paper. The coupled codes were tested using a single PWR pin-cell problem and 3x3 array of PWR fuel pins. The preliminary results are compared with those obtained from a STAR-CD calculation coupled with the deterministic transport code DeCART. Ongoing research is described to investigate more efficient acceleration and convergence methods, as well as more robust methods to validate the coupled calculation.},
   file         = {:VV/Seker_McSTAR_2007.pdf:PDF},
   keywords     = {Monte Carlo, thermal feedback, McStar, CFD, high-performance computing},
+}
+
+@TechReport{AIAA1998,
+  author      = {{AIAA}},
+  institution = {{American} {Institute} of {Aeronautics} and {Astronautics}},
+  title       = {Guide for the verification and validation of computational fluid dynamics simulations.},
+  year        = {1998},
+  address     = {{Reston}, {VA}},
+  number      = {AIAA-G-077-1998},
+}
+
+@TechReport{ASME2018,
+  author       = {{ASME}},
+  title        = {{V\&V 40}: {Assessing} {Credibility} of {Computational} {Modeling} {Through} {Verification} and {Validation}: {Application} to {Medical} {Devices}},
+  year         = {2018},
+  type         = {Standard},
+  abstract     = {Computational modeling can be used throughout the product life cycle to provide information about technical performance, safety, and effectiveness of medical devices. Computational models can also be used to assess aspects of in vivo performance without subjecting patients (or animals) topotential harm or unnecessary risk. Establishing the credibility of a computational model to assess performance is important because of the potential risk a device presents to patients and/or healthcare providers.
+
+Model credibility can be established through verification and validation (V\&V) activities. Although methods for V\&V are becoming well established, guidance is lacking on assessing the relecance and adequacy of the V\&V activities for computational models used to support medical device development and evaluation. Given the inherent risk of using a computational model as a basis for predicting medical device performance, the ASME V\&V 40 Subcommittee has developed a risk-informed credibility assessment framework. The framework centers on establishing that model credibility is commensurate with the risk associated with the decisions influenced by the computational model. Thus, the intent of this Standard is to provide guidance on how to establish and communicate risk-informed credibility of computational models used in the evaluation of medical devices.},
+  file         = {:VV/ASME V&V 40-2018.pdf:PDF},
+  organization = {{American} {Society} of {Mechanical} {Engineers}},
+  school       = {{American} {Society} of {Mechanical} {Engineers}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
